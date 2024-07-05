@@ -1,0 +1,6 @@
+import os
+
+class Config:
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key'
+    API_URL = 'https://api.cortex.cerebrium.ai/v4/p-2ea5546d/firstproject/predict'
+    API_TOKEN = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiJwLTJlYTU1NDZkIiwiaWF0IjoxNzE5ODE4NDg1LCJleHAiOjIwMzUzOTQ0ODV9.BxH8y1iolDMT8ZZYd6SqqdTfrIum2qslBZ61gEAe5hb7VrTXj8wTOReDrDBbkAKPeqF9TcK9jXZIpzDzxTMkK9-y4GuawUD5kzzhv2s7VxOieqJ34GNOLdPMIOLE1eCZxNgj7GMvf2Rhvwh2zZSvgza64HYoEclCYFXj719A4huYMwqMrZ3HKMkolG_PC6yizDxRXiUuuEn-aXSym8lqIB1qX1awZkwiHOXiIOPf8bhLoEM7v27eQ7ZPLPVs9buKQVOeWIk7_lybaCAbpOTL9BZr7NKXCK8yOZXWwjW_U1MasL5znqgZ41_tUIkdy9rXq0OLlfq9sffeKubH_DyU9w'
