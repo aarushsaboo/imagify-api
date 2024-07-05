@@ -6,7 +6,7 @@ from flask_cors import CORS
 # print(sys.path)
 def create_app(config_class=Config):
     app = Flask(__name__, static_url_path='/static', static_folder='../static')
-    CORS(app)
+    CORS(app, resources={r"/*": {"origins": "*"}})
     app.config.from_object(config_class)
 
     from app import routes
